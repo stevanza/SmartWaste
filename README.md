@@ -1,4 +1,5 @@
 SmartWaste - Garbage Detection App
+
 SmartWaste is an Android application that uses real-time camera to detect and classify garbage using machine learning technology. The app can identify three types of waste: Organic, Inorganic, and B3 (Hazardous and Toxic Materials).
 🚀 Key Features
 
@@ -165,16 +166,12 @@ app/src/main/res/
   
 🤝 Contributing
 
-	Fork the repository
-	Create a feature branch (git checkout -b feature/new-feature)
-	Commit your changes (git commit -am 'Add new feature')
-	Push to the branch (git push origin feature/new-feature)
-	Create a Pull Request
-
-
-Roboflow for providing the machine learning API
-CameraX team for the excellent camera library
-OkHttp for reliable HTTP client implementation
+- Roboflow for providing the machine learning API
+- CameraX team for the excellent camera library
+- OkHttp for reliable HTTP client implementation
 
 
 Note: This app requires a trained model on Roboflow platform. Make sure to train your model with appropriate garbage dataset before using this application.
+
+Check our Roboflow models
+[SmartWaste](https://app.roboflow.com/cohya/smartwaste-ncnds/models)
