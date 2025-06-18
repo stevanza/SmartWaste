@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/garbage_detection"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#2E7D32" />
+
+    <!-- FrameLayout untuk menumpuk Preview dan Bounding Box -->
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:background="#E0E0E0">
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Overlay untuk menggambar Bounding Box -->
+        <com.example.smartwaste.BoundingBoxOverlay
+            android:id="@+id/boundingBoxOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <!-- LinearLayout untuk menampung Debug View -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debug View (Frame untuk API):"
+            android:textSize="12sp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- ImageView untuk Debugging dengan ID yang benar -->
+        <ImageView
+            android:id="@+id/debugImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="#333"/>
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arahkan kamera ke sampah..."
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detection_result"
+            android:textSize="14sp"
+            android:padding="16dp"
+            android:textColor="#333333" />
+    </ScrollView>
+
+</LinearLayout>
