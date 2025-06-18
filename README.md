@@ -79,8 +79,10 @@ xml<uses-permission android:name="android.permission.CAMERA" />
 🚀 Installation & Setup
 
 Clone the repository
-bashgit clone https://github.com/your-username/smartwaste.git
-cd smartwaste
+
+'''git clone https://github.com/your-username/smartwaste.git'''
+
+'''cd smartwaste'''
 
 Open in Android Studio
 
