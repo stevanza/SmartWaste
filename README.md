@@ -2,11 +2,11 @@ SmartWaste - Garbage Detection App
 SmartWaste is an Android application that uses real-time camera to detect and classify garbage using machine learning technology. The app can identify three types of waste: Organic, Inorganic, and B3 (Hazardous and Toxic Materials).
 🚀 Key Features
 
-Real-time Detection: Live garbage detection through camera
-Multi-class Classification: Classifies waste into 3 categories
-Visual Bounding Box: Displays bounding boxes with confidence scores
-Live Preview: Real-time camera view with detection overlay
-Debug View: Shows frames sent to API for debugging purposes
+- Real-time waste monitoring
+- Route optimization for waste collection
+- Data analytics and reporting
+- User and admin dashboards
+- Notification system
 
 🏗️ Application Architecture
 Main Components
@@ -76,40 +76,35 @@ xml<uses-permission android:name="android.permission.CAMERA" />
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-🚀 Installation & Setup
 
-Clone the repository
+🚀 Getting Started
 
-```git clone https://github.com/your-username/smartwaste.git```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/stevanza/SmartWaste.git
+   cd smartwaste
 
-
-```cd smartwaste```
-
-Open in Android Studio
+2. Open in Android Studio
 
 Import the project in Android Studio
 Sync the project with Gradle
 
-
-Configure API
+3. Configure API
 
 Update API_KEY in RoboflowAPI.java with your Roboflow API key
 Verify API_URL points to your trained model endpoint
 
-
-Build and Run
+4. Build and Run
 
 Connect your Android device or start an emulator
 Build and install the app
 
-
-
 🎯 Usage
 
-Launch the app and grant camera permissions
-Point the camera at waste objects
-View real-time detection with bounding boxes and confidence scores
-Check detection results in the scrollable text area below
+- Launch the app and grant camera permissions
+- Point the camera at waste objects
+- View real-time detection with bounding boxes and confidence scores
+- Check detection results in the scrollable text area below
 
 📊 Detection Classes
 ClassDescriptionColorOrganikOrganic waste (food scraps, leaves, etc.)GreenAnorganikInorganic waste (plastic, metal, glass, etc.)GreenB3Hazardous waste (batteries, chemicals, etc.)Green
