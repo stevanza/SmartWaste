@@ -173,5 +173,5 @@ app/src/main/res/
 
 Note: This app requires a trained model on Roboflow platform. Make sure to train your model with appropriate garbage dataset before using this application.
 
-Check our Roboflow models
+Check out our Roboflow models
 [SmartWaste](https://app.roboflow.com/cohya/smartwaste-ncnds/models)
